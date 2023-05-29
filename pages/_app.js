@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }) {
     <Layout>
       <Head>
         <title>Hello Next</title>
-        <meta name="viewport" content="initial-scale=1.5, width=device-width" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Component {...pageProps} />
     </Layout>
