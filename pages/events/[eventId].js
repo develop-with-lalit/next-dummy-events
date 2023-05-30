@@ -6,6 +6,7 @@ import EventContent from "@/components/event-content/event-content";
 import ErrorAlert from "@/components/ui/error-alert";
 import Button from "@/components/ui/button";
 import { getAllEvents, getEventById } from "@/helper/api-util";
+import Comments from "@/components/input/comments";
 
 function EventDetailPage({ event }) {
   if (!event) {
@@ -33,6 +34,7 @@ function EventDetailPage({ event }) {
       <EventContent>
         <p>{event.description}</p>
       </EventContent>
+      <Comments eventId={event.id} />
     </Fragment>
   );
 }
